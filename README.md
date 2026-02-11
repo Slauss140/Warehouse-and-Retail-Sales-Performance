@@ -5,7 +5,6 @@ This dashboard analyzes warehouse and retail sales across years, tracking total 
 - [Data Source](#Data_Source).
 - [Stages](#Stages).
 - [Design](#Design).
-  - [Mockup](#Mockup).
   - [Tools](#Tools).
 - [Development](#Development).
   - [Pseudocode](#Pseudocode).
