@@ -25,3 +25,21 @@ This dashboard analyzes warehouse and retail sales across years, tracking total 
   - [Potential ROI](#Potential-ROI).
   - [Potential Courses of Actions](#Potential-Courses-of-Actions).
 - [Conclusion](#Conclusion).
+### Objective
+To analyze warehouse and retail sales performance across item types and suppliers from 2017–2020, identify trends, evaluate data quality, and provide actionable recommendations for improving sales and operational efficiency.
+### Data Source
+-	Internal sales database containing warehouse and retail transactions.
+-	Supplier-level sales records.
+-	Dashboard visualizations (Power BI/Tableau).
+### Design
+-	Dashboard segmented into panels: warehouse sales, retail sales, supplier totals, yearly trends, and performance metrics.
+-	Comparative breakdown by item type (Beer, Wine, Liquor, Kegs, Non-Alcohol, Supplies, Dunnage).
+-	Year filter (2017–2020) for trend analysis.
+### Tools
+-	Mysql Server for data storage and querying.
+-	Power BI/Tableau for visualization.
+-	Excel/SPSS for preliminary exploration.
+
+
+
+
