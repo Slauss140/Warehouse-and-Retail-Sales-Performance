@@ -37,8 +37,18 @@ To analyze warehouse and retail sales performance across item types and supplier
 -	Year filter (2017–2020) for trend analysis.
 ### Tools
 -	Mysql Server for data storage and querying.
+  
+  ![mysql](asset/images/mysql)
 -	Power BI/Tableau for visualization.
+  
+   ![Power Bi](asset/images/powerbi)
 -	Excel/SPSS for preliminary exploration.
+  
+	 ![excell](asset/images/excell)
+### Development
+-	ETL pipeline for extracting raw sales data.
+-	Transformation scripts for cleaning and aggregating sales by category.
+-	SQL views for structured reporting
 
 
 
