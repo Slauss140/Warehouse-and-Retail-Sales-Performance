@@ -38,7 +38,7 @@ To analyze warehouse and retail sales performance across item types and supplier
 ### Tools
 -	Mysql Server for data storage and querying.
   
-  ![mysql](asset/images/mysql)
+    ![mysql](asset/images/mysql)
 -	Power BI/Tableau for visualization.
   
    ![Power Bi](asset/images/powerbi)
@@ -65,6 +65,67 @@ To analyze warehouse and retail sales performance across item types and supplier
 -	What are your initial observations with this dataset? What's caught your attention so far?
 1.	There are at least 7 columns that contain the data we need for this analysis, which signals we have everything we need from the file without needing to contact the client for any more data.
 2.	We have more data than we need, so some of these columns would need to be removed
+### Data Cleaning
+- The cleaned data should meet the following criteria and constraints:
+   - Only relevant columns should be retained.
+   - All data types should be appropriate for the contents of each column.
+   - No column should contain null values, indicating complete data for all records.
+    - Here is a tabular representation of the expected schema for the clean data:
+     
+  |Column Name|Data Type|Nullable|
+  |--------|-----|-----|
+  |Itema_Type|Text|NO|
+  |Retail_sales|Double|NO|
+  |Retail_transfer|Integer|NO|
+  |Supplier|Text|NO|
+  |Warehouse_sales|Integer|NO|
+  |Year|Integer|NO|
+ 
+- Steps are needed to clean and shape the data into the desired format
+ 1. Remove unnecessary columns by only selecting the ones you need
+ 2. Remove nulls 
+### Create SQL view
+The sql creates a sql view
+```sql
+/*
+# 1. Create a view to store the transformed data
+# 2. Select the required columns from the warehouse_and_retail_sales_edited table 
+*/
+--- 1.
+create view Warehouse_retail_view as (
+--- 2. 
+select 
+    YEAR,
+    SUPPLIER,
+    ITEM_TYPE,
+    WAREHOUSE_SALES,
+    RETAIL_TRANSFERS,
+    Retail_sales
+from warehouse_and_retail_sales_edited);
+```
+### Testing
+Here are the data quality tests conducted:
+#### Data type check
+```sql
+select
+	column_name,
+    data_type
+from information_schema.columns
+where table_name = 'warehouse_retail_view'
+```
+
+![](#asset/images/data_type.png)
+
+#### Column check
+```sql
+SELECT
+    COUNT(*) AS column_count
+FROM
+    INFORMATION_SCHEMA.COLUMNS
+WHERE
+    TABLE_NAME = 'warehouse_retail_view'
+```
+![](#asset/images/asset/images/column_check.png)
 
 
 
