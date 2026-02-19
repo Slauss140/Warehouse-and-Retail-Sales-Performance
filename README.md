@@ -178,14 +178,14 @@ RETURN transferrate
 -	Dunnage requires investigation due to negative values.
 -	Supplier concentration indicates reliance on a few key players.
 
-### Findings
+#### Findings
 -	Beer drives warehouse sales, Liquor drives retail.
 -	Retail sales are growing steadily across years.
 -	Supplier dependency could pose risks.
-### Validation
+#### Validation
 -	Totals match across SQL views and dashboard.
 -	Yearly trends align with expected seasonal variations.
-### Discovery
+#### Discovery
 -	Retail Liquor sales outperform Beer despite Beer’s warehouse dominance.
 -	Negative Dunnage highlights operational inefficiencies.
 ### Recommendations
@@ -193,11 +193,11 @@ RETURN transferrate
 -	Diversify supplier base to reduce dependency risks.
 -	Strengthen retail Liquor and Wine channels.
 -	Explore promotional strategies for Non-Alcohol products.
-###Potential ROI
+####Potential ROI
 -	Improved supplier diversification could reduce risk exposure by 15–20%.
 -	Addressing Dunnage inefficiencies could recover ~0.12M in lost value.
 -	Expanding retail Liquor sales could increase overall revenue by 10%.
-### Potential Courses of Action
+#### Potential Courses of Action
 -	Negotiate better terms with top suppliers.
 -	Introduce targeted retail campaigns for Liquor and Wine.
 -	Implement stricter warehouse controls to minimize Dunnage losses.
