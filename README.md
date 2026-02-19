@@ -148,7 +148,6 @@ Total_sale =
  var totalwarehouse = SUM(Warehouse_and_Retail_Sales_edited[WAREHOUSE_SALES])
  var Totalretail = SUM(Warehouse_and_Retail_Sales_edited[RETAIL_SALES])
  var Totalsales = totalwarehouse + Totalretail
-
  RETURN Totalsales
 ```
 #### 2. Warehouse total sales
@@ -163,13 +162,12 @@ Retail total sales =
 var retailtotals=SUM(Warehouse_and_Retail_Sales_edited[RETAIL_SALES])
 RETURN retailtotals
 ```
-#### 4 Transfer Rate`
+#### 4 Transfer Rate
 ```DAX Measures
 Tranfer rate = 
 var retailtranfer =SUM(Warehouse_and_Retail_Sales_edited[RETAIL_TRANSFERS])
 var warehousesales = SUM(Warehouse_and_Retail_Sales_edited[WAREHOUSE_SALES])
 var transferrate= FORMAT( DIVIDE(retailtranfer,warehousesales,BLANK()),"0.00%")
-
 RETURN transferrate
 ```
 ### Analysis
