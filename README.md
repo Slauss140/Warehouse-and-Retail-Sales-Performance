@@ -114,7 +114,7 @@ from information_schema.columns
 where table_name = 'warehouse_retail_view'
 ```
 
-![data type](#asset/images/data-type)
+![data type](asset/images/data-type)
 
 #### Column check
 ```sql
@@ -125,7 +125,7 @@ FROM
 WHERE
     TABLE_NAME = 'warehouse_retail_view'
 ```
-![column check](#asset/images/column-check)
+![column check](asset/images/column-check)
 
 
 
