@@ -1,5 +1,5 @@
 # Warehouse-and-Retail-Sales-Performance
-This dashboard analyzes warehouse and retail sales across years, tracking total sales, transfers, and category breakdowns (beer, liquor, wine, kegs, non-alcoholic). Supplier performance and yearly trends are visualized, with interactive filters enabling exploration by year and item type to guide planning, inventory, and supplier evaluation.
+This report analyzes the warehouse and retail sales across years, tracking total sales, transfers, and category breakdowns (beer, liquor, wine, kegs, non-alcoholic). Supplier performance and yearly trends are visualized, with interactive filters enabling exploration by year and item type to guide planning, inventory, and supplier evaluation.
 ## Table of Content
 - [Objective](#Objective).
 - [Data Source](#Data_Source).
@@ -203,7 +203,6 @@ RETURN transferrate
 -	Addressing Dunnage inefficiencies could recover ~0.12M in lost value.
 -	Expanding retail Liquor sales could increase overall revenue by 10%.
 #### Potential Courses of Action
--	Negotiate better terms with top suppliers.
 -	Introduce targeted retail campaigns for Liquor and Wine.
 -	Implement stricter warehouse controls to minimize Dunnage losses.
 ### Conclusion
