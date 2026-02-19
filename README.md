@@ -193,7 +193,7 @@ RETURN transferrate
 -	Diversify supplier base to reduce dependency risks.
 -	Strengthen retail Liquor and Wine channels.
 -	Explore promotional strategies for Non-Alcohol products.
-####Potential ROI
+#### Potential ROI
 -	Improved supplier diversification could reduce risk exposure by 15–20%.
 -	Addressing Dunnage inefficiencies could recover ~0.12M in lost value.
 -	Expanding retail Liquor sales could increase overall revenue by 10%.
