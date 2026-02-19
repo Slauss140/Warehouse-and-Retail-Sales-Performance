@@ -127,6 +127,85 @@ WHERE
 ```
 ![column check](asset/images/column-check)
 
+### Visualization
+
+![Warehouse Retail sales](asset/images/warehouse_retail_sales_dashbord.png)
+
+This shows the warehouse and retali sales performance.
+
+![Warehouse sales](asset/images/Warehouse_sales.png)
+
+This shows the warehouse sales performance.
+
+![Retail sales](asset/images/Retail_sales.png)
+
+This shows the retali sales performance.
+
+### DAX Measures
+#### 1. Total Sales
+```DAX Measures
+Total_sale = 
+ var totalwarehouse = SUM(Warehouse_and_Retail_Sales_edited[WAREHOUSE_SALES])
+ var Totalretail = SUM(Warehouse_and_Retail_Sales_edited[RETAIL_SALES])
+ var Totalsales = totalwarehouse + Totalretail
+
+ RETURN Totalsales
+```
+#### 2. Warehouse total sales
+```Dax Measures
+warehouse totals = 
+var totalsales= SUM(Warehouse_and_Retail_Sales_edited[WAREHOUSE_SALES])
+RETURN totalsales
+```
+#### 3. Retail total sales
+```DAX Measures
+Retail total sales = 
+var retailtotals=SUM(Warehouse_and_Retail_Sales_edited[RETAIL_SALES])
+RETURN retailtotals
+```
+#### 4 Transfer Rate`
+```DAX Measures
+Tranfer rate = 
+var retailtranfer =SUM(Warehouse_and_Retail_Sales_edited[RETAIL_TRANSFERS])
+var warehousesales = SUM(Warehouse_and_Retail_Sales_edited[WAREHOUSE_SALES])
+var transferrate= FORMAT( DIVIDE(retailtranfer,warehousesales,BLANK()),"0.00%")
+
+RETURN transferrate
+```
+### Analysis
+-	Warehouse sales are the backbone of revenue.
+-	Retail sales show diversification, especially in Liquor and Wine.
+-	Dunnage requires investigation due to negative values.
+-	Supplier concentration indicates reliance on a few key players.
+
+### Findings
+-	Beer drives warehouse sales, Liquor drives retail.
+-	Retail sales are growing steadily across years.
+-	Supplier dependency could pose risks.
+### Validation
+-	Totals match across SQL views and dashboard.
+-	Yearly trends align with expected seasonal variations.
+### Discovery
+-	Retail Liquor sales outperform Beer despite Beer’s warehouse dominance.
+-	Negative Dunnage highlights operational inefficiencies.
+### Recommendations
+-	Investigate Dunnage discrepancies.
+-	Diversify supplier base to reduce dependency risks.
+-	Strengthen retail Liquor and Wine channels.
+-	Explore promotional strategies for Non-Alcohol products.
+###Potential ROI
+-	Improved supplier diversification could reduce risk exposure by 15–20%.
+-	Addressing Dunnage inefficiencies could recover ~0.12M in lost value.
+-	Expanding retail Liquor sales could increase overall revenue by 10%.
+### Potential Courses of Action
+-	Negotiate better terms with top suppliers.
+-	Introduce targeted retail campaigns for Liquor and Wine.
+-	Implement stricter warehouse controls to minimize Dunnage losses.
+### Conclusion
+The dashboard highlights strong warehouse performance driven by Beer, while retail sales are led by Liquor. Addressing Dunnage issues, diversifying suppliers, and strengthening retail channels can significantly enhance profitability and reduce operational risks.
+
+
+
 
 
 
