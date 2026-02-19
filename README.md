@@ -143,6 +143,7 @@ This shows the retali sales performance.
 
 ### DAX Measures
 #### 1. Total Sales
+
 ```DAX Measures
 Total_sale = 
  var totalwarehouse = SUM(Warehouse_and_Retail_Sales_edited[WAREHOUSE_SALES])
@@ -151,18 +152,21 @@ Total_sale =
  RETURN Totalsales
 ```
 #### 2. Warehouse total sales
+
 ```Dax Measures
 warehouse totals = 
 var totalsales= SUM(Warehouse_and_Retail_Sales_edited[WAREHOUSE_SALES])
 RETURN totalsales
 ```
 #### 3. Retail total sales
+
 ```DAX Measures
 Retail total sales = 
 var retailtotals=SUM(Warehouse_and_Retail_Sales_edited[RETAIL_SALES])
 RETURN retailtotals
 ```
 #### 4 Transfer Rate
+
 ```DAX Measures
 Tranfer rate = 
 var retailtranfer =SUM(Warehouse_and_Retail_Sales_edited[RETAIL_TRANSFERS])
